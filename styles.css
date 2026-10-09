@@ -30,8 +30,8 @@ main {
   padding: 16px 16px 40px 16px;
   border-radius: 20px;
   background: var(--white);
-  width: 320px;
-  height: 499px;
+  width: 90%;
+  height: auto;
   box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.0477);
   gap: 24px;
 }
@@ -48,8 +48,8 @@ main {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  width: 288px;
-  height: 288px;
+  width: 100%;
+  height: auto;
   background: var(--blue-600);
 }
 
@@ -107,4 +107,16 @@ main {
 
 .attribution {
   display: none;
+}
+
+@media screen and (min-width: 320px) {
+  .card {
+    width: 320px;
+    height: 499px;
+  }
+
+  .qr_container {
+    width: 288px;
+    height: 288px;
+  }
 }
